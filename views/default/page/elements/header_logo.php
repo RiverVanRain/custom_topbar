@@ -2,9 +2,9 @@
 
 $file_src = elgg_get_data_path() . 'assets/logo.png';
 if (file_exists($file_src)) {
-	$asset_src = elgg_get_simplecache_url('assets/logo.png');
+    $asset_src = elgg_get_simplecache_url('assets/logo.png');
 } else {
-	$asset_src = elgg_get_simplecache_url('topbar/logo.png');
+    $asset_src = elgg_get_simplecache_url('topbar/logo.png');
 }
 
 $logo = elgg_format_element('img', [

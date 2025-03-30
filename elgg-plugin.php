@@ -19,37 +19,37 @@ return [
 
     'actions' => [
         'admin/topbar/logo' => [
-			'controller' => \wZm\CustomTopbar\Actions\SaveLogoAction::class,
-			'access' => 'admin',
-		],
+            'controller' => \wZm\CustomTopbar\Actions\SaveLogoAction::class,
+            'access' => 'admin',
+        ],
     ],
-	
-	'events' => [
-		'register' => [
-			'menu:admin_header' => [
-				\wZm\CustomTopbar\Menus\AdminHeader::class => [],
-			],
-			'menu:topbar' => [
-				\wZm\CustomTopbar\Menus\Topbar::class => [],
-			],
-		],
-	],
+
+    'events' => [
+        'register' => [
+            'menu:admin_header' => [
+                \wZm\CustomTopbar\Menus\AdminHeader::class => [],
+            ],
+            'menu:topbar' => [
+                \wZm\CustomTopbar\Menus\Topbar::class => [],
+            ],
+        ],
+    ],
 
     'view_extensions' => [
         'admin.css' => [
             'topbar/admin.css' => [],
         ],
-		'elements/layout/topbar.css' => [
+        'elements/layout/topbar.css' => [
             'topbar/topbar.css' => ['priority' => 800],
         ],
     ],
 
     'views' => [
-		'default' => [
-			'assets/' => elgg_get_data_path() . 'assets/',
-		],
-		'json' => [
-			'assets/' => elgg_get_data_path() . 'assets/',
-		],
-	],
+        'default' => [
+            'assets/' => elgg_get_data_path() . 'assets/',
+        ],
+        'json' => [
+            'assets/' => elgg_get_data_path() . 'assets/',
+        ],
+    ],
 ];

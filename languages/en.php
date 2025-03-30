@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Custom topbar
  * @author Nikolai Shcherbin
@@ -6,9 +7,10 @@
  * @copyright (c) Nikolai Shcherbin 2025
  * @link https://wzm.me
 **/
+
 return [
-	'assets:logo' => 'App logo (PNG format)',
-	'admin:topbar' => 'Custom topbar',
-	'admin:topbar:logo' => 'App logo',
-	'admin:topbar:logo:success' => 'Logo has been saved',
+    'assets:logo' => 'App logo (PNG format)',
+    'admin:topbar' => 'Custom topbar',
+    'admin:topbar:logo' => 'App logo',
+    'admin:topbar:logo:success' => 'Logo has been saved',
 ];
